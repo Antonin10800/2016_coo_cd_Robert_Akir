@@ -1,0 +1,6 @@
+- l'utilisateur créer un chargeurMagasin
+- Ce qui créer un Magasin
+- ChargeurMagasin crée une classe chargeurCd
+- ChargeurMagasin utilise chargerCD()
+    - Ce qui créer un cd grace aux fichiers XML avec extrairePiste(), ajouterPiste().
+- Ajoute le cd créer
