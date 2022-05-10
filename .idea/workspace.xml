@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccb90007-f0f8-475f-89d8-34a64d528e3d" name="Changes" comment="" />
+    <list default="true" id="28d2728e-bf24-4d7c-81c0-674118603bb8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/2016_coo_cd_Robert_Akir/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2016_coo_cd_Robert_Akir/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2016_coo_cd_Robert_Akir/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2016_coo_cd_Robert_Akir/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2016_coo_cd_Robert_Akir/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2016_coo_cd_Robert_Akir/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2016_coo_cd_Robert_Akir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2016_coo_cd_Robert_Akir/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +18,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="28xvQ8GhtaRALoE8L0UyHIGIC31" />
+  <component name="ProjectId" id="28xyg08eLj21EuQnNoxuh1tXaIM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,28 +29,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="show.migrate.to.gradle.popup" value="false" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ASUS G713Q\IUT\S2\ConceptionOrienteObjet\TD11\musicbrainzSimple" />
-      <recent name="C:\Users\ASUS G713Q\IUT\S2\ConceptionOrienteObjet\TD11\src\donnees" />
-      <recent name="C:\Users\ASUS G713Q\IUT\S2\ConceptionOrienteObjet\TD11\src\main" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ccb90007-f0f8-475f-89d8-34a64d528e3d" name="Changes" comment="" />
-      <created>1652171048931</created>
+      <changelist id="28d2728e-bf24-4d7c-81c0-674118603bb8" name="Changes" comment="" />
+      <created>1652172652421</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1652171048931</updated>
-      <workItem from="1652171050205" duration="934000" />
+      <updated>1652172652421</updated>
+      <workItem from="1652172656825" duration="373000" />
     </task>
     <servers />
   </component>
