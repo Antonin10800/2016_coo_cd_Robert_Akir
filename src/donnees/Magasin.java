@@ -1,5 +1,8 @@
 package donnees;
 
+import XML.ChargeurMagasin;
+
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 /**
@@ -69,5 +72,43 @@ public class Magasin {
 	}
 
 	// TODO  ajouter une methode de tri
+public void triCD(){
+		int taille = listeCds.size();
+		int compteur = 1; //place qui se décale vers la droite pour savoir ce qui est deja trier
+		CD min = listeCds.get(0);
+		for(int a=0;a<(listeCds.size()-1);a++){ //Boucle qui répete le parcour de tri pleins de fois
 
+
+		for(int i=compteur; i<taille;i++){ // boucle pour parcourir les valeurs qui restent à trier
+			// on trouve le plus petit
+			CD temp = listeCds.get(i);
+
+			int res =temp.comparerCDs(min);
+			if(res<0){
+				min = listeCds.get(i);
+
+			}
+
+		}
+		//echanger2CD();
+		}
+}
+public void echanger2CD(CD CDPlusPetit, CD cdABouger){
+		int placeCDPlusPetit = listeCds.indexOf(CDPlusPetit);
+		int placeCDABouger = listeCds.indexOf(cdABouger);
+		listeCds.add(placeCDABouger, CDPlusPetit);// on bouge le cd bon
+		listeCds.add(placeCDPlusPetit,cdABouger);
+}
+public int compareCd(CD cd1, CD cd2){
+		int res;
+		res =cd1.getNomCD().compareTo(cd2.getNomCD());
+		return res;
+}
+
+	public static void main(String[] args) throws FileNotFoundException {
+		ChargeurMagasin n = new ChargeurMagasin("./musicbrainzSimple");
+		Magasin m = n.chargerMagasin();
+		m.triCD();
+		System.out.println(m);
+	}
 }

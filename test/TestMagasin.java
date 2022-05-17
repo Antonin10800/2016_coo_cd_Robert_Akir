@@ -1,6 +1,17 @@
+import XML.ChargeurMagasin;
+import donnees.CD;
+import donnees.Magasin;
+import org.junit.jupiter.api.Test;
+
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+
+import static org.junit.jupiter.api.AssertEquals.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class TestMagasin {
 
-    @test
+   // @test
     public void test_charger(){
 
 
@@ -15,4 +26,19 @@ public class TestMagasin {
 //        14 ) ;
 
     }
+    @Test
+    public void testTriCD() throws FileNotFoundException {
+        ChargeurMagasin m = new ChargeurMagasin("./musicbrainzSimple");
+        Magasin magasin = m.chargerMagasin();
+        CD cd1 = new CD("Antonin","Alors la zone");
+        CD cd2 = new CD("Amhed","gpasdidee");
+        CD cd3 = new CD("s","oui");
+        ArrayList<CD> liste = null;
+        liste.add(cd3);
+        liste.add(cd1);
+        liste.add(cd2);
+        liste.trier
+        assertEquals;
+    }
+
 }

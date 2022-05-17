@@ -34,6 +34,7 @@ public class CD {
 	 * les pistes du CD
 	 */
 	private List<InfoPiste> pistes;
+	private List<CD> listeCds;
 
 	/**
 	 * constructeur simple, cree un CD sans aucune piste
@@ -97,5 +98,82 @@ public class CD {
 		return (resultat);
 	}
 
-	// TODO 
+	public String getNomArtiste() {
+		return nomArtiste;
+	}
+
+	public String getNomCD() {
+		return nomCD;
+	}
+
+	public int comparerCDs(CD cd){
+		int res = this.nomCD.compareTo(cd.nomCD);
+		return res;
+	}
+
+	/**
+	 * permet de trier par nom d'artistes croissant
+	 */
+	public void trierAriste() {
+		// tri par selection
+		int nbCDs = this.listeCds.size();
+		for (int i = 0; i < nbCDs; i++) {
+			CD cdSelectionne = this.listeCds.get(i);
+
+			//Selectionne le plus petit
+			int indiceSelection = i;
+			for (int j = i + 1; j < nbCDs; j++) {
+				CD cdTemp = listeCds.get(j);
+				if (cdTemp.etreAvantArtiste(cdSelectionne)) {
+					indiceSelection = j;
+					cdSelectionne = cdTemp;
+				}
+			}
+			listeCds.set(indiceSelection, listeCds.get(i));
+			listeCds.set(i, cdSelectionne);
+		}
+	}
+
+
+	public void trierAlbum() {
+		// tri par selection
+		int nbCDs = this.listeCds.size();
+		for (int i = 0; i < nbCDs; i++) {
+			CD cdSelectionne = this.listeCds.get(i);
+
+			//selectionne plus petit
+			int indiceSelection = i;
+			for (int j = i + 1; j < nbCDs; j++) {
+				CD cdTemp = listeCds.get(j);
+				if (cdTemp.etreAvantAlbum(cdSelectionne)) {
+					indiceSelection = j;
+					cdSelectionne = cdTemp;
+				}
+			}
+			listeCds.set(indiceSelection, listeCds.get(i));
+			listeCds.set(i, cdSelectionne);
+		}
+	}
+
+
+	/**
+	 * comparateur de cd selon le nom
+	 *
+	 * @param cd
+	 *            cd a comparer
+	 * @return vrai si this est avant cd
+	 */
+	public boolean etreAvantAlbum(CD cd) {
+		return (this.nomCD.compareTo(cd.nomCD) < 0);
+	}
+
+	/**
+	 * comparateur de cd selon le nom d'artiste
+	 *
+	 * @param cd
+	 * @return
+	 */
+	public boolean etreAvantArtiste(CD cd) {
+		return (this.nomArtiste.compareTo(cd.nomArtiste) < 0);
+	}
 }
